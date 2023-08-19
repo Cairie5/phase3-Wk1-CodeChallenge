@@ -9,3 +9,5 @@ def positive_count(a=10, b=-5, c=2):
     else:
         # Return False if fewer than two arguments are positive
         return False
+
+print(positive_count(10, -5, 2))

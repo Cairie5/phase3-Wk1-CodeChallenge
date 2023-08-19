@@ -11,4 +11,4 @@ def convert_to_24_hour(hour, minute, period):
     # Format the hour and minute with leading zeros, if needed, and combine them
     return f"{hour:02d}{minute:02d}"
 
-
+print(convert_to_24_hour(8, 30, "am"))
