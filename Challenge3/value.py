@@ -20,7 +20,6 @@ def highest_consonant_value(s):
 
     return max_value
 
-# Example usage
 input_string = "abcdedfg"
 result = highest_consonant_value(input_string)
 print(result)  # Output: 15 (consonant substrings: "bcd", "d", "fg")
