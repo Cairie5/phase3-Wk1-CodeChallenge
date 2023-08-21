@@ -20,6 +20,6 @@ def highest_consonant_value(s):
 
     return max_value
 
-input_string = "abcdedfg"
+input_string = "strengh"
 result = highest_consonant_value(input_string)
 print(result) 
