@@ -1,18 +1,27 @@
-#create a function positive_count with three arguments
-
+# Define a function named positive_count with three arguments: a, b, and c.
 def positive_count(a, b, c):
    
-   
-    # The function returns True if at least two of the arguments are positive
+    # Create a count variable to keep track of the number of positive integers.
+    count = 0
     
-    positive_nums = [num for num in (a, b, c) if num > 0]
+    # Check if the first integer 'a' is positive.
+    if a > 0:
+        count += 1
     
-    if len(positive_nums) == 2:
+    # Check if the second integer 'b' is positive.
+    if b > 0:
+        count += 1
+    
+    # Check if the third integer 'c' is positive.
+    if c > 0:
+        count += 1
+    
+    # Check if exactly two out of the three integers are positive.
+    if count == 2:
         return True
-    #otherwise returns false
     else:
         return False
 
 
-result = positive_count(10, 5, 2)
-print(result)
+print(positive_count(2, 4, -3))   # True
+print(positive_count(-4, 6, 0))   # False
